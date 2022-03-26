@@ -1,0 +1,445 @@
+/* Things to fix
+fix spacing between social icons and header icons
+allign shit
+fix searchbar
+add flexboxes instead of just grids !!!!!!!
+*/
+
+/* global */
+
+@font-face {
+  font-family: "Hiragino Mincho";
+  src: url("../fonts/Hiragino_Mincho_ProN_W3.otf") format("opentype");
+}
+a,
+p {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
+li {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0%;
+}
+/* global header */
+.campaign h1,
+h2 {
+  font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.logo_dt {
+  display: none;
+}
+nav {
+  display: none;
+  position: absolute;
+  top: 85px;
+  background: #fff4ec;
+  z-index: 1000;
+  left: 0px;
+}
+.menu_dt {
+  display: none;
+}
+.menu ul {
+  padding: 0%;
+  margin: 0%;
+}
+
+nav li {
+  display: block;
+  padding: 20px 30px;
+}
+nav li a {
+  color: #0a3641;
+  border-bottom: 1px solid #0a3641;
+  width: auto;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+label i {
+  font-size: 30px;
+  color: #fff4ec;
+  margin-left: 15px;
+}
+.current {
+  background-color: #0a3641;
+}
+.current a {
+  color: #fff4ec;
+  border-bottom: 1px solid #fff4ec;
+}
+
+.search {
+  background-color: #fff;
+  border: 2px solid #40240a;
+  color: #0a3641;
+  padding: 5px 20px;
+  text-align: center;
+  display: inline-flex;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+
+.menu_icons ul {
+  padding: 5px 5px;
+}
+.menu_icons a,
+li {
+  color: #fff4ec;
+}
+.menu_icons a {
+  display: inline-block;
+  font-size: 30px;
+  padding: 5px;
+  margin: 0%;
+}
+.campaign {
+  display: flex;
+  justify-content: center;
+  max-height: 30px;
+}
+.campaign h1 {
+  color: #0a3641;
+  font-size: 15pt;
+  text-align: center;
+  display: inline-flex;
+  margin: 0%;
+}
+
+/* gridarea header */
+header {
+  grid-area: header;
+  background-color: #0a3641;
+}
+.container .fa-solid {
+  grid-area: hamburger;
+  background-color: none;
+}
+.container .search {
+  grid-area: search;
+}
+.container .menu_icons {
+  grid-area: icons;
+  background-color: none;
+}
+.container .campaign {
+  grid-area: campaign;
+  background-color: #fff;
+}
+.logo_dt {
+  grid-area: logo_dt;
+}
+/* header grid*/
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "hamburger search icons"
+    "campaign campaign campaign";
+}
+
+/* global footer */
+
+.directory ul {
+  padding: 15px 10px 10px 10px;
+  margin: 0 0;
+}
+.directory li {
+  display: block;
+  padding: 5px 0px;
+}
+.directory a {
+  font-size: 12px;
+  color: #0a3641;
+}
+.socials ul {
+  /* justify-content: center;
+  margin: 35px 0px 0px 0px; */
+  padding: 15px 10px 10px 10px;
+  margin: 20px 0 0 0;
+}
+/* .socials ul li {
+  padding: 5px, 5px;
+  display: inline-block;
+  margin: 0%;
+} */
+.fa-brands {
+  font-size: 30px;
+  padding: 5px;
+  margin: 0 0;
+  color: black;
+}
+
+/* gridarea footer */
+footer {
+  grid-area: footer;
+  background-color: #fff4ec;
+}
+.directory {
+  grid-area: directory;
+  background-color: none;
+}
+.socials {
+  grid-area: socials;
+  background-color: none;
+}
+section.socials {
+  position: absolute;
+  right: 10px;
+}
+
+.copyright {
+  grid-area: copyright;
+  background-color: none;
+  color: #0a3641;
+  font-size: 10px;
+  font-weight: 8000;
+  text-align: center;
+  margin-top: 0%;
+  padding-bottom: 10px;
+}
+/* footer grid */
+
+footer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "directory directory . socials"
+    "copyright copyright copyright copyright";
+}
+
+/* homepage */
+
+/* main */
+
+main {
+  background-color: #0a3641;
+}
+.greeting_image {
+  background-image: url("/images/HomeWOlogo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+
+.logo img {
+  padding-top: 5vh;
+  max-width: 200px;
+}
+.greeting_text {
+  color: #fff4ec;
+  display: flex;
+  justify-content: center;
+}
+
+button.cta {
+  background-color: #fff;
+  border: 2px solid #40240a;
+  color: #0a3641;
+  /* font-size: ; - maybe add later */
+  padding: 10px 40px;
+  text-align: center;
+  display: inline-flex;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+div.cta {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3vh;
+}
+
+/* gridarea main */
+main {
+  grid-area: main;
+  background-color: #0a3641;
+}
+.greeting_image {
+  grid-area: greeting_image;
+  background-color: aqua;
+}
+.greeting_text {
+  grid-area: greeting_text;
+}
+.greeting_text h2 {
+  grid-area: greeting_text_h2;
+  background-color: none;
+}
+.greeting_text a {
+  grid-area: greeting_text_a;
+}
+
+/* main grid  */
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "greeting_image"
+    "greeting_text_h2"
+    "greeting_text_a";
+}
+
+/* Media queries */
+
+/* 600px */
+@media screen and (min-width: 600px) {
+  main {
+    margin-top: 50px;
+  }
+  label {
+    display: none;
+  }
+  .container {
+    max-height: 15vh;
+  }
+  .nav {
+    display: none;
+  }
+  .menu_icons {
+    position: absolute;
+    right: 10px;
+  }
+  .logo_dt {
+    display: contents;
+  }
+  .logo_dt img {
+    max-width: 5%;
+    max-height: 5%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+  }
+  .menu_dt {
+    grid-area: menu_dt;
+  }
+  .container {
+    background-color: #fff4ec;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "dt_logo . search icons"
+      "campaign campaign campaign campaign"
+      "menu_dt menu_dt menu_dt menu_dt";
+  }
+
+  label i {
+    font-size: 30px;
+    color: #0a3641;
+    margin-left: 15px;
+  }
+  .current {
+    background-color: #fff4ec;
+  }
+  .current a {
+    color: #fff4ec;
+    border-bottom: 1px solid #0a3641;
+  }
+
+  .search {
+    background-color: #fff;
+    border: 2px solid #40240a;
+    color: #0a3641;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .menu_icons ul {
+    margin-top: 20px;
+    margin-top: 5px;
+    padding: 5px 5px, 20px, 5px;
+  }
+  .menu_icons a,
+  li {
+    color: #0a3641;
+  }
+  .menu_icons a {
+    display: inline-block;
+    font-size: 30px;
+    padding: 5px;
+    margin: 0%;
+  }
+  section.campaign {
+    background-color: #0a3641;
+  }
+  .campaign {
+    /* display: flex; */
+    justify-content: center;
+    max-height: 30px;
+    width: 100%;
+    background-color: #0a3641;
+  }
+  .campaign h1 {
+    color: #0a3641;
+    font-size: 15pt;
+    text-align: center;
+    display: inline-flex;
+    margin: 0%;
+  }
+  .greeting_image {
+    min-height: 80vh;
+  }
+  nav.menu_dt {
+    display: flex;
+    min-width: 100%;
+    justify-content: space-evenly;
+  }
+  .current_dt {
+    background-color: #0a3641;
+  }
+  .current_dt a {
+    color: #fff4ec;
+  }
+  .menu ul {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  nav li {
+    display: inline;
+    padding: 20px 30px;
+  }
+  nav li a {
+    color: #0a3641;
+    border-bottom: 1px solid #0a3641;
+    width: auto;
+  }
+}
