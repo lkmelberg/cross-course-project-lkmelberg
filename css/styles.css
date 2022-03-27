@@ -284,7 +284,7 @@ main {
 }
 .greeting_image {
   grid-area: greeting_image;
-  background-color: aqua;
+  background-color: none;
 }
 .greeting_text {
   grid-area: greeting_text;
