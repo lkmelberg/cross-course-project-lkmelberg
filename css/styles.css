@@ -257,7 +257,7 @@ main {
   justify-content: center;
 }
 
-button.cta {
+.cta_button {
   background-color: #fff;
   border: 2px solid #40240a;
   color: #0a3641;
@@ -313,9 +313,6 @@ main {
 
 /* 600px */
 @media screen and (min-width: 600px) {
-  main {
-    margin-top: 50px;
-  }
   label {
     display: none;
   }
@@ -341,10 +338,23 @@ main {
     left: 60px;
     top: 20px;
   }
+  .menu_dt a {
+    color: #0a3641;
+  }
+  .menu_dt li {
+    display: inline-flex;
+    padding: 5px 25px;
+    justify-items: flex-end;
+  }
   .menu_dt {
+    text-align: center;
+    padding-bottom: 100px;
     grid-area: menu_dt;
+    display: inline-block;
+    justify-content: center;
   }
   .container {
+    padding-bottom: 50px;
     background-color: #fff4ec;
     display: grid;
     grid-template-columns: auto;
@@ -359,13 +369,6 @@ main {
     font-size: 30px;
     color: #0a3641;
     margin-left: 15px;
-  }
-  .current {
-    background-color: #fff4ec;
-  }
-  .current a {
-    color: #fff4ec;
-    border-bottom: 1px solid #0a3641;
   }
 
   .search {
@@ -415,13 +418,9 @@ main {
     margin: 0%;
   }
   .greeting_image {
-    min-height: 80vh;
+    min-height: 75vh;
   }
-  nav.menu_dt {
-    display: flex;
-    min-width: 100%;
-    justify-content: space-evenly;
-  }
+
   .current_dt {
     background-color: #0a3641;
   }
@@ -441,5 +440,35 @@ main {
     color: #0a3641;
     border-bottom: 1px solid #0a3641;
     width: auto;
+  }
+  .greeting_text {
+    color: #fff4ec;
+    display: flex;
+    justify-content: center;
+  }
+  .greeting_text h2 {
+    display: none;
+  }
+  button.cta {
+    background-color: #fff;
+    border: 2px solid #40240a;
+    color: #0a3641;
+    /* font-size: ; - maybe add later */
+    padding: 10px 40px;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .cta_button {
+    display: visible;
+    position: absolute;
+    bottom: 300px;
+  }
+  .greeting_image {
+    background-image: url("/images/HomeWOlogoDT.jpg");
   }
 }
