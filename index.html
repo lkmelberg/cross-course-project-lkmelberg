@@ -11,16 +11,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/mediaquery.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/cf5488008f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header class="container">
     <div class="logo_dt">
-      <a href="index.html"></a><img src="images/logo.png" alt="Rainydays logo"></a>
+      <a href="index.html"><img src="images/logo.png" alt="Rainydays logo"></a>
     </div>
-    <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
     <input type="checkbox" id="hamburger-menu" />
+    <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
     <nav class="menu">
       <ul>
         <li class="current"><a href="index.html">HOME</a></li>
@@ -29,9 +30,9 @@
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
-    <section class="search">
-      <input type="text" placeholder="Search..">
-    </section>
+
+    <input type="text" placeholder="Search.." class="search">
+
     <section class="menu_icons">
       <ul>
         <li><a href="favorites.html"><i class="fa-solid fa-heart"></i></a></li>
@@ -60,7 +61,7 @@
         <h2>Start your adventure!</h2>
       </div>
       <div class="cta">
-        <button href="shop.html" class="cta_button">SHOP NOW</button>
+        <a href="shop.html" class="cta_button">SHOP NOW</a>
       </div>
     </section>
   </main>

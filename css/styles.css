@@ -94,7 +94,8 @@ label i {
   border-radius: 40px;
   align-items: center;
   justify-content: center;
-  margin: 10%;
+  margin: 0%;
+  max-width: 60px;
 }
 
 .menu_icons ul {
@@ -104,9 +105,9 @@ label i {
 li {
   color: #fff4ec;
 }
-.menu_icons a {
+.menu_icons .fa-solid {
   display: inline-block;
-  font-size: 30px;
+  font-size: 20px;
   padding: 5px;
   margin: 0%;
 }
@@ -131,6 +132,7 @@ header {
 .container .fa-solid {
   grid-area: hamburger;
   background-color: none;
+  max-width: max-content;
 }
 .container .search {
   grid-area: search;
@@ -200,8 +202,6 @@ footer {
 .socials {
   grid-area: socials;
   background-color: none;
-}
-section.socials {
   position: absolute;
   right: 10px;
 }
@@ -307,168 +307,4 @@ main {
     "greeting_image"
     "greeting_text_h2"
     "greeting_text_a";
-}
-
-/* Media queries */
-
-/* 600px */
-@media screen and (min-width: 600px) {
-  label {
-    display: none;
-  }
-  .container {
-    max-height: 15vh;
-  }
-  .nav {
-    display: none;
-  }
-  .menu_icons {
-    position: absolute;
-    right: 10px;
-  }
-  .logo_dt {
-    display: contents;
-  }
-  .logo_dt img {
-    max-width: 5%;
-    max-height: 5%;
-    height: auto;
-    width: auto;
-    position: absolute;
-    left: 60px;
-    top: 20px;
-  }
-  .menu_dt a {
-    color: #0a3641;
-  }
-  .menu_dt li {
-    display: inline-flex;
-    padding: 5px 25px;
-    justify-items: flex-end;
-  }
-  .menu_dt {
-    text-align: center;
-    padding-bottom: 100px;
-    grid-area: menu_dt;
-    display: inline-block;
-    justify-content: center;
-  }
-  .container {
-    padding-bottom: 50px;
-    background-color: #fff4ec;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "dt_logo . search icons"
-      "campaign campaign campaign campaign"
-      "menu_dt menu_dt menu_dt menu_dt";
-  }
-
-  label i {
-    font-size: 30px;
-    color: #0a3641;
-    margin-left: 15px;
-  }
-
-  .search {
-    background-color: #fff;
-    border: 2px solid #40240a;
-    color: #0a3641;
-    padding: 5px 20px;
-    text-align: center;
-    display: inline-flex;
-    border-radius: 40px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-
-  .menu_icons ul {
-    margin-top: 20px;
-    margin-top: 5px;
-    padding: 5px 5px, 20px, 5px;
-  }
-  .menu_icons a,
-  li {
-    color: #0a3641;
-  }
-  .menu_icons a {
-    display: inline-block;
-    font-size: 30px;
-    padding: 5px;
-    margin: 0%;
-  }
-  section.campaign {
-    background-color: #0a3641;
-  }
-  .campaign {
-    /* display: flex; */
-    justify-content: center;
-    max-height: 30px;
-    width: 100%;
-    background-color: #0a3641;
-  }
-  .campaign h1 {
-    color: #0a3641;
-    font-size: 15pt;
-    text-align: center;
-    display: inline-flex;
-    margin: 0%;
-  }
-  .greeting_image {
-    min-height: 75vh;
-  }
-
-  .current_dt {
-    background-color: #0a3641;
-  }
-  .current_dt a {
-    color: #fff4ec;
-  }
-  .menu ul {
-    padding: 0%;
-    margin: 0%;
-  }
-
-  nav li {
-    display: inline;
-    padding: 20px 30px;
-  }
-  nav li a {
-    color: #0a3641;
-    border-bottom: 1px solid #0a3641;
-    width: auto;
-  }
-  .greeting_text {
-    color: #fff4ec;
-    display: flex;
-    justify-content: center;
-  }
-  .greeting_text h2 {
-    display: none;
-  }
-  button.cta {
-    background-color: #fff;
-    border: 2px solid #40240a;
-    color: #0a3641;
-    /* font-size: ; - maybe add later */
-    padding: 10px 40px;
-    text-align: center;
-    display: inline-flex;
-    border-radius: 40px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
-
-  .cta_button {
-    display: visible;
-    position: absolute;
-    bottom: 300px;
-  }
-  .greeting_image {
-    background-image: url("/images/HomeWOlogoDT.jpg");
-  }
 }
