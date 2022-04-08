@@ -1,154 +1,138 @@
-/* Media queries */
-
-/* 600px */
 @media screen and (min-width: 600px) {
-  label {
-    display: none;
+  /* global */
+  /* header items */
+  .header :nth-child(1) {
+    order: 1;
   }
-  .container {
-    max-height: 15vh;
+  .header :nth-child(2) {
+    order: 2;
   }
-  .nav {
-    display: none;
+  .header :nth-child(3) {
+    order: 3;
   }
+  .header :nth-child(4) {
+    order: 4;
+  }
+  .header :nth-child(5) {
+    order: 5;
+  }
+  /* header -nav */
 
-  .logo_dt {
-    display: contents;
-  }
-  .logo_dt img {
-    max-width: 5%;
-    max-height: 5%;
-    height: auto;
-    width: auto;
-    position: absolute;
-    left: 60px;
-    top: 20px;
-  }
-  .menu_dt a {
-    color: #0a3641;
-  }
-  .menu_dt li {
-    display: inline-flex;
-    padding: 5px 25px;
-    justify-items: flex-end;
-  }
-  .menu_dt {
-    text-align: center;
-    padding-bottom: 100px;
-    grid-area: menu_dt;
-    display: inline-block;
-    justify-content: center;
-  }
-
-  label i {
-    font-size: 30px;
-    color: #0a3641;
-    margin-left: 15px;
-  }
-
-  .search {
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-
-  .menu_icons {
-    position: absolute;
-    right: 30px;
-  }
-
-  .menu_icons ul {
-    margin-top: 20px;
-    margin-top: 5px;
-    padding: 5px 5px, 20px, 5px;
-  }
-  .menu_icons .fa-solid {
-    color: #0a3641;
-    display: inline-block;
-    font-size: 30px;
-    padding: 20px;
-    margin: 0%;
-  }
-  .menu_icons a {
-    display: inline-block;
-    font-size: 30px;
-    padding: 5px;
-    margin: 0%;
-  }
-  section.campaign {
-    background-color: #0a3641;
-  }
-
-  .container {
-    padding-bottom: 50px;
+  header {
     background-color: #fff4ec;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "dt_logo . search icons"
-      "campaign campaign campaign campaign"
-      "menu_dt menu_dt menu_dt menu_dt";
+    padding-top: 2px;
   }
 
-  .campaign {
-    display: flex;
-    justify-content: center;
-    max-height: 30px;
-    width: 100%;
+  .menu_icons i {
+    color: #0a3641;
+  }
+  .header_middle {
     background-color: #0a3641;
+    margin-top: 2px;
   }
   .campaign h1 {
-    color: #0a3641;
-    font-size: 15pt;
-    text-align: center;
-    display: inline-flex;
-    margin: 0%;
-  }
-  .greeting_image {
-    min-height: 75vh;
-  }
-
-  .current_dt {
-    background-color: #0a3641;
-  }
-  .current_dt a {
     color: #fff4ec;
   }
-  .menu ul {
-    padding: 0%;
-    margin: 0%;
+
+  /* navigation */
+  nav {
+    text-align: center;
+    position: relative;
+    top: 0;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  .header_bottom {
+    flex-basis: 100vw;
   }
 
   nav li {
     display: inline;
-    padding: 20px 30px;
+    padding: 7px 40px;
+    border-radius: 2px;
   }
   nav li a {
-    color: #0a3641;
-    border-bottom: 1px solid #0a3641;
-    width: auto;
+    border-bottom: none;
   }
-  */ .greeting_text {
-    color: #fff4ec;
-    display: flex;
-    justify-content: center;
+  .current a {
+    border-bottom: none;
   }
-  .greeting_text h2 {
+  .menu {
+    display: block;
+  }
+
+  label {
     display: none;
   }
-  div.cta {
-    justify-content: center;
-    padding-bottom: 0vh;
+  .header_top {
+    display: inline-block;
+    max-width: 8vw;
   }
-  .cta_button {
-    position: absolute;
-    bottom: 30%;
+
+  /* footer */
+
+  .footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    padding: 10px 0px;
+  }
+  .footer :nth-child(1) {
+    order: 1;
+  }
+  .footer :nth-child(2) {
+    order: 3;
+  }
+  .footer :nth-child(3) {
+    order: 2;
+  }
+
+  .footer_middle {
+    flex-basis: 50%;
+  }
+
+  /* index page */
+  .logo_image {
+    width: 100%;
   }
   .greeting_image {
     background-image: url("/images/HomeWOlogoDT.jpg");
   }
 
-  .socials {
-    right: 30px;
+  .greeting_text h2 {
+    display: none;
+  }
+
+  .greeting_cta_button {
+    position: relative;
+    bottom: 125px;
+  }
+  .greeting_cta {
+    max-height: 1px;
+    padding: 0%;
+  }
+
+  /* about us page */
+
+  /* contact us page */
+
+  /* products page - shop */
+
+  /* product 1 page - winter deluxe */
+
+  /* cart page */
+
+  /* checkout page */
+
+  /* checkout success page */
+}
+
+@media screen and (min-width: 900px) {
+  nav li {
+    padding: 7px 80px;
+  }
+
+  .menu_icons ul {
+    gap: 2vw;
   }
 }

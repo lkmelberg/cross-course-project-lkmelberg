@@ -1,0 +1,51 @@
+/* index css */
+
+main {
+  background-color: #0a3641;
+}
+.greeting_image {
+  background-image: url("/images/HomeWOlogo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  min-height: 65vh;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+
+.greeting_image_logo img {
+  padding-top: 5vh;
+  max-width: 200px;
+}
+.greeting {
+  display: flex;
+  flex-direction: column;
+}
+.greeting_text {
+  color: #fff4ec;
+  display: flex;
+  justify-content: center;
+}
+.greeting_cta_button {
+  background-color: #fff;
+  border: 2px solid #40240a;
+  color: #0a3641;
+  /* font-size: ; - maybe add later */
+  padding: 10px 40px;
+  text-align: center;
+  display: inline-flex;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-weight: 1900;
+}
+
+.greeting_cta {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3vh;
+}

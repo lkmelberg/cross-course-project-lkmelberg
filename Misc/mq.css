@@ -1,0 +1,376 @@
+/* Media queries */
+
+/* 600px */
+@media screen and (min-width: 600px) {
+  label {
+    display: none;
+  }
+  .container {
+    max-height: 15vh;
+  }
+  .nav {
+    display: none;
+  }
+
+  .logo_dt {
+    display: block;
+  }
+  .logo_dt img {
+    max-width: 5%;
+    max-height: 5%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+  }
+  .menu_dt a {
+    color: #0a3641;
+  }
+  .menu_dt li {
+    display: inline-flex;
+    padding: 5px 25px;
+    justify-items: flex-end;
+  }
+  .menu_dt {
+    text-align: center;
+    grid-area: menu_dt;
+    display: inline-block;
+    justify-content: center;
+  }
+
+  label i {
+    font-size: 30px;
+    color: #0a3641;
+    margin-left: 15px;
+  }
+
+  .search {
+  }
+
+  .menu_icons {
+    /* position: absolute; */
+    /* right: 30px; */
+  }
+
+  .menu_icons ul {
+    margin: 0;
+    padding: 0 5px;
+  }
+  .menu_icons .fa-solid {
+    color: #0a3641;
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 20px;
+    margin: 0%;
+  }
+  .menu_icons a {
+    display: inline-block;
+    font-size: 30px;
+    padding: 5px;
+    margin: 0%;
+  }
+  section.campaign {
+    background-color: #0a3641;
+  }
+
+  .container {
+    padding-bottom: 50px;
+    background-color: #fff4ec;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "dt_logo . search icons"
+      "campaign campaign campaign campaign"
+      "menu_dt menu_dt menu_dt menu_dt";
+  }
+
+  .campaign {
+    display: flex;
+    justify-content: center;
+    max-height: 30px;
+    width: 100%;
+    background-color: #0a3641;
+  }
+  .campaign h1 {
+    color: #0a3641;
+    font-size: 15pt;
+    text-align: center;
+    display: inline-flex;
+    margin: 0%;
+  }
+  .greeting_image {
+    min-height: 75vh;
+  }
+
+  .current_dt {
+    background-color: #0a3641;
+  }
+  .current_dt a {
+    color: #fff4ec;
+  }
+  .menu ul {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  nav li {
+    display: inline;
+    padding: 20px 30px;
+  }
+  nav li a {
+    color: #0a3641;
+    border-bottom: 1px solid #0a3641;
+    width: auto;
+  }
+  .greeting_text {
+    color: #fff4ec;
+    display: flex;
+    justify-content: center;
+  }
+  .greeting_text h2 {
+    display: none;
+  }
+  div.cta {
+    justify-content: center;
+    padding-bottom: 0vh;
+  }
+  .cta_button {
+    position: absolute;
+    bottom: 30%;
+  }
+  .greeting_image {
+    background-image: url("/images/HomeWOlogoDT.jpg");
+  }
+
+  .socials {
+    right: 30px;
+  }
+
+  .page-header-top {
+    background: var(--color-bg-1);
+  }
+
+  .image-logo {
+    display: inline-block;
+  }
+
+  .page-header-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    @media screen and (min-width: 600px) {
+  .menu_icons {
+    position: relative !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu_icons {
+  position: relative;
+}
+
+.page-header-third {
+  height: 100%;
+  width: 33.3%;
+}
+
+.page-header-search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header-social-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top-bar {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-bottom-bar {
+  background-color: none;
+  color: #0a3641;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 8000;
+  padding-bottom: 10px;
+
+
+  } }}
+  
+
+  /* Media queries
+
+/* 600px */
+
+@media screen and (min-width: 600px) {
+  label {
+    display: none;
+  }
+  .container {
+    max-height: 15vh;
+  }
+  .nav {
+    display: none;
+  }
+
+  .logo_dt {
+    display: contents;
+  }
+  .logo_dt img {
+    max-width: 5%;
+    max-height: 5%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+  }
+  .menu_dt a {
+    color: #0a3641;
+  }
+  .menu_dt li {
+    display: inline-flex;
+    padding: 5px 25px;
+    justify-items: flex-end;
+  }
+  .menu_dt {
+    text-align: center;
+    padding-bottom: 100px;
+    grid-area: menu_dt;
+    display: inline-block;
+    justify-content: center;
+  }
+
+  label i {
+    font-size: 30px;
+    color: #0a3641;
+    margin-left: 15px;
+  }
+
+  .search {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .menu_icons {
+    position: absolute;
+    right: 30px;
+  }
+
+  .menu_icons ul {
+    margin-top: 20px;
+    margin-top: 5px;
+    padding: 5px 5px, 20px, 5px;
+  }
+  .menu_icons .fa-solid {
+    color: #0a3641;
+    display: inline-block;
+    font-size: 30px;
+    padding: 20px;
+    margin: 0%;
+  }
+  .menu_icons a {
+    display: inline-block;
+    font-size: 30px;
+    padding: 5px;
+    margin: 0%;
+  }
+  section.campaign {
+    background-color: #0a3641;
+  }
+
+  .container {
+    padding-bottom: 50px;
+    background-color: #fff4ec;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "dt_logo . search icons"
+      "campaign campaign campaign campaign"
+      "menu_dt menu_dt menu_dt menu_dt";
+  }
+
+  .campaign {
+    display: flex;
+    justify-content: center;
+    max-height: 30px;
+    width: 100%;
+    background-color: #0a3641;
+  }
+  .campaign h1 {
+    color: #0a3641;
+    font-size: 15pt;
+    text-align: center;
+    display: inline-flex;
+    margin: 0%;
+  }
+  .greeting_image {
+    min-height: 75vh;
+  }
+
+  .current_dt {
+    background-color: #0a3641;
+  }
+  .current_dt a {
+    color: #fff4ec;
+  }
+  .menu ul {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  nav li {
+    display: inline;
+    padding: 20px 30px;
+  }
+  nav li a {
+    color: #0a3641;
+    border-bottom: 1px solid #0a3641;
+    width: auto;
+  }
+  .greeting_text {
+    color: #fff4ec;
+    display: flex;
+    justify-content: center;
+  }
+  .greeting_text h2 {
+    display: none;
+  }
+  div.cta {
+    justify-content: center;
+    padding-bottom: 0vh;
+  }
+  .cta_button {
+    position: absolute;
+    bottom: 30%;
+  }
+  .greeting_image {
+    background-image: url("/images/HomeWOlogoDT.jpg");
+  }
+
+  .socials {
+    right: 30px;
+  }
+}

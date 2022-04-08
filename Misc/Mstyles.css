@@ -1,0 +1,404 @@
+/* Things to fix
+fix spacing between social icons and header icons
+allign shit
+fix searchbar
+add flexboxes instead of just grids !!!!!!!
+*/
+
+:root {
+  --color-bg-1: #fff4ec;
+  --color-bg-2: #0a3641;
+
+}
+
+
+/* global */
+
+@font-face {
+  font-family: "Hiragino Mincho";
+  src: url("../fonts/Hiragino_Mincho_ProN_W3.otf") format("opentype");
+}
+a,
+p {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
+li {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0%;
+}
+/* global header */
+.campaign h1,
+h2 {
+  font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.logo_dt {
+  display: none;
+}
+nav {
+  display: none;
+  position: absolute;
+  top: 85px;
+  background: #fff4ec;
+  z-index: 1000;
+  left: 0px;
+}
+.menu_dt {
+  /* display: none; */
+}
+
+.menu ul {
+  padding: 0%;
+  margin: 0%;
+}
+
+nav li {
+  display: block;
+  padding: 20px 30px;
+}
+nav li a {
+  color: #0a3641;
+  border-bottom: 1px solid #0a3641;
+  width: auto;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.hamburger-menu-icon {
+  position: absolute;
+  top: 20px;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+label i {
+  font-size: 30px;
+  color: #fff4ec;
+  margin-left: 15px;
+}
+.current {
+  background-color: #0a3641;
+}
+.current a {
+  color: #fff4ec;
+  border-bottom: 1px solid #fff4ec;
+}
+
+.search {
+  background-color: #fff;
+  border: 2px solid #40240a;
+  color: #0a3641;
+  padding: 5px 20px;
+  text-align: center;
+  display: inline-flex;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  /* max-width: 60px; */
+  max-height: 29px;
+}
+
+.menu_icons ul {
+  padding: 0 5px;
+}
+.menu_icons a,
+li {
+  color: #fff4ec;
+}
+.menu_icons .fa-solid {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 5px;
+  margin: 0%;
+}
+.campaign {
+  display: flex;
+  justify-content: center;
+  max-height: 30px;
+}
+.campaign h1 {
+  color: #0a3641;
+  font-size: 15pt;
+  text-align: center;
+  display: inline-flex;
+  margin: 0%;
+}
+
+/* gridarea header */
+header {
+  grid-area: header;
+  background-color: #0a3641;
+}
+.container .fa-solid {
+  grid-area: hamburger;
+  background-color: none;
+  max-width: max-content;
+}
+.container .search {
+  grid-area: search;
+}
+.container .menu_icons {
+  grid-area: icons;
+  background-color: none;
+}
+.container .campaign {
+  grid-area: campaign;
+  background-color: #fff;
+}
+.logo_dt {
+  grid-area: logo_dt;
+}
+/* header grid*/
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "hamburger search icons"
+    "campaign campaign campaign";
+}
+
+/* global footer */
+
+.directory ul {
+  padding: 15px 10px 10px 10px;
+  margin: 0 0;
+}
+.directory li {
+  display: block;
+  padding: 5px 0px;
+}
+.directory a {
+  font-size: 12px;
+  color: #0a3641;
+}
+.socials ul {
+  /* justify-content: center;
+  margin: 35px 0px 0px 0px; */
+  padding: 15px 10px 10px 10px;
+  margin: 20px 0 0 0;
+}
+/* .socials ul li {
+  padding: 5px, 5px;
+  display: inline-block;
+  margin: 0%;
+} */
+.fa-brands {
+  font-size: 30px;
+  padding: 5px;
+  margin: 0 0;
+  color: black;
+}
+
+/* gridarea footer */
+footer {
+  grid-area: footer;
+  background-color: #fff4ec;
+}
+.directory {
+  grid-area: directory;
+  background-color: none;
+}
+.socials {
+}
+
+.copyright {
+  grid-area: copyright;
+  background-color: none;
+  color: #0a3641;
+  font-size: 10px;
+  font-weight: 8000;
+  text-align: center;
+  margin-top: 0%;
+  padding-bottom: 10px;
+}
+/* footer grid */
+
+footer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "directory directory . socials"
+    "copyright copyright copyright copyright";
+}
+
+/* homepage */
+
+/* main */
+
+main {
+  background-color: #0a3641;
+}
+.greeting_image {
+  background-image: url("/images/HomeWOlogo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+
+.logo img {
+  padding-top: 5vh;
+  max-width: 200px;
+}
+.greeting_text {
+  color: #fff4ec;
+  display: flex;
+  justify-content: center;
+}
+
+.cta_button {
+  background-color: #fff;
+  border: 2px solid #40240a;
+  color: #0a3641;
+  /* font-size: ; - maybe add later */
+  padding: 10px 40px;
+  text-align: center;
+  display: inline-flex;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+div.cta {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3vh;
+}
+
+/* gridarea main */
+main {
+  grid-area: main;
+  background-color: #0a3641;
+}
+.greeting_image {
+  grid-area: greeting_image;
+  background-color: none;
+}
+.greeting_text {
+  grid-area: greeting_text;
+}
+.greeting_text h2 {
+  grid-area: greeting_text_h2;
+  background-color: none;
+}
+.greeting_text a {
+  grid-area: greeting_text_a;
+}
+
+/* main grid  */
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "greeting_image"
+    "greeting_text_h2"
+    "greeting_text_a";
+}
+
+/* --------- Martin changes ------------- */
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-logo {
+  width: 64px;
+  height: 34px;
+  display: none;
+}
+
+.page-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  background: var(--color-bg-2);
+}
+
+.page-header-middle {
+  width: 100%;
+  text-align: center;
+  color: #0a3641;
+  font-size: 15pt;
+  background: #fff;
+  font-weight: 700;
+  padding: 2px 0;
+  font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
+}
+.page-header-bottom {
+  width: 100%;
+  background: var(--color-bg-1);
+}
+
+@media screen and (min-width: 600px) {
+  .menu_icons {
+    position: relative !important;
+  }
+}
+
+.menu_icons {
+  position: relative;
+}
+
+.page-header-third {
+  height: 100%;
+  width: 33.3%;
+}
+
+.page-header-search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header-social-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top-bar {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-bottom-bar {
+  background-color: none;
+  color: #0a3641;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 8000;
+  padding-bottom: 10px;
+}
