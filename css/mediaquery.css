@@ -97,6 +97,7 @@
   }
   .greeting_image {
     background-image: url("/images/HomeWOlogoDT.jpg");
+    min-height: 80vh;
   }
 
   .greeting_text h2 {
@@ -131,8 +132,29 @@
   nav li {
     padding: 7px 80px;
   }
+  nav li a {
+    font-size: 20;
+  }
+
+  .header_top {
+    max-width: 9vw;
+  }
 
   .menu_icons ul {
     gap: 2vw;
+  }
+  .directory a {
+    font-size: 15px;
+    color: #0a3641;
+  }
+  .directory li {
+    padding: 10px 0px;
+  }
+  .fa-brands {
+    font-size: 40px;
+    padding: 10px;
+  }
+  .copyright {
+    font-size: 12px;
   }
 }
