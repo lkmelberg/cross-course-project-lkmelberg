@@ -1,0 +1,25 @@
+h1,
+h2 {
+  font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.main_chs_container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* padding: 0px 20px; */
+  justify-content: center;
+}
+
+.main_chs_banner {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  background-color: #fff4ec;
+  padding: 5px 0px;
+}
+
+.main_chs_banner img {
+  max-width: 200px;
+}

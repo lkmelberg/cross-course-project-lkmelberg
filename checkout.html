@@ -35,8 +35,14 @@
                 </ul>
             </div>
         </div>
-        <div class="header_middle campaign">
-            <h1>Buy 2 Jackets - Get 10% Off</h1>
+        <div class="header_middle breadcrumb">
+            <ul>
+                <li class="breadcrumb_text"><a href="cart.html"></a>1.Cart</li>
+                <li class="breadcrumb_text"> / </li>
+                <li class="breadcrumb_text breadcrumb_current"><a href="checkout.html">2.Checkout</a></li>
+                <li class="breadcrumb_text"> / </li>
+                <li class="breadcrumb_text"><a href="checkout_success.html">3.Order Confirmation</a></li>
+            </ul>
         </div>
         <div class="header_bottom">
             <div class="header_bottom_nav">
@@ -54,17 +60,64 @@
         </div>
     </header>
     <main>
-        <section class="greeting">
-            <div class="greeting_image">
-                <a href="index.html" class="greeting_image_logo"><img src="images/logo.png" alt="Rainydays logo"></a>
+        <div class="main_ch_container">
+            <div class="main_ch_header">
+                <h1>Checkout</h1>
             </div>
-            <div class="greeting_text">
-                <h2>Start your adventure!</h2>
+            <div class="main_ch_details">
+                <div class="main_ch_deliverydetails">
+                    <h2>Delivery Details:
+                    </h2>
+                </div>
+                <form class="cart_form" method="post" action="card.html">
+                    <div class="form_item contact_form_item contact_form_name">
+                        <label for="name" class="contact_form_item">Name on card:</label>
+                        <div class="contact_form_input">
+                            <input type="text" id="name" name="name" class="contact_form_name_input item_form">
+                        </div>
+                    </div>
+                    <div class="form_item contact_form_item contact_form_number">
+                        <label for="ccn">Credit Card Number:</label>
+                        <div class="contact_form_input">
+                            <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
+                                autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"
+                                class="item_form">
+                        </div>
+                    </div>
+                    <div class="form_item contact_form_item contact_form_email">
+                        <label for="exdate" class="contact_form_item">Expiration Date:</label>
+                        <div class="contact_form_input">
+                            <input type="text" id="exdate" name="exdate" class="contact_form_email_input item_form"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form_item contact_form_item contact_form_tel">
+                        <label for="sec" class="contact_form_item">Security Code:</label>
+                        <div class="contact_form_input">
+                            <input type="text" id="sec" name="sec" class="contact_form_email_input item_form">
+                        </div>
+                    </div>
+                    <div class="form_item contact_form_item contact_form_tel">
+                        <label for="delivery" class="contact_form_item">Delivery Method:</label>
+                        <div class="contact_form_input">
+                            <select name="delivery" id="delivery" class="item_form">
+                                <option value="mailbox">In Your Mailbox</option>
+                                <option value="pickupp">Pick Up Point</option>
+                                <option value="express">Express Delivery</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="greeting_cta">
-                <a href="shop.html" class="greeting_cta_button">SHOP NOW</a>
+            <div class="main_ch_buttons">
+                <div class="main_ch_place">
+                    <a href="checkout_success.html" class="cart_form_submit_button button">PLACE ORDER</a>
+                </div>
+                <div class="main_ch_back">
+                    <a href="cart.html" class="cart_form_submit_button button">BACK</a>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer_left">

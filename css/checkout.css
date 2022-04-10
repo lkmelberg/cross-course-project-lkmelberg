@@ -1,0 +1,40 @@
+h1,
+h2,
+label {
+  color: #fff4ec;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+h1 {
+  font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 0%;
+}
+h2,
+label {
+  font-family: "Roboto", sans-serif;
+}
+.main_ch_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.cart_form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.main_ch_place,
+.main_ch_back {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.main_ch_back {
+  margin-bottom: 20px;
+}
