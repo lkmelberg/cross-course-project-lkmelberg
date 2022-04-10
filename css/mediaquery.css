@@ -140,7 +140,10 @@
   /* about us page */
 
   /* contact us page */
-
+  .contact_main_form label {
+    display: contents;
+    font-size: 20px;
+  }
   /* products page - shop */
 
   /* product 1 page - winter deluxe */
@@ -217,6 +220,19 @@
     max-width: 300px;
   }
   /* contact us page */
+
+  .contact_main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+  }
+  .contact_main_header {
+    flex-basis: 100%;
+  }
+  .contact_main_info {
+    border-radius: 20px;
+  }
 
   /* products page - shop */
   .product_image {
@@ -354,11 +370,24 @@
     font-size: 45px;
   }
   /* contact us page */
+  .contact_main h1 {
+    font-size: 70px;
+  }
+  .contact_main h2 {
+    font-size: 50px;
+  }
+  .contact_main p,
+  .contact_main label {
+    font-size: 20px;
+  }
 
   /* products page - shop */
   .product_image {
-    height: 650px;
+    width: 800px;
     padding: 10px 20px;
+  }
+  .products_list_container {
+    row-gap: 100px;
   }
   /* product 1 page - winter deluxe */
 

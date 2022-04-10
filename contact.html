@@ -54,17 +54,69 @@
         </div>
     </header>
     <main>
-        <section class="greeting">
-            <div class="greeting_image">
-                <a href="index.html" class="greeting_image_logo"><img src="images/logo.png" alt="Rainydays logo"></a>
+        <div class="contact_main">
+            <section class="contact_main_header">
+                <h1>Contact Us</h1>
+            </section>
+            <div class="contact_main_form">
+                <form class="contact_form" method="post" action="contact.php">
+                    <div class="form_item contact_form_item contact_form_name">
+                        <label for="name" class="contact_form_item">Name:</label>
+                        <div class="contact_form_input">
+                            <input type="text" id="name" name="name" class="contact_form_name_input item_form" required>
+                        </div>
+                    </div>
+                    <div class="form_item contact_form_item contact_form_email">
+                        <label for="email" class="contact_form_item">Email:</label>
+                        <div class="contact_form_input">
+                            <input type="email" id="email" name="email" class="contact_form_email_input item_form"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form_item contact_form_item contact_form_message">
+                        <label for="message" class="contact_form_item">Message:</label>
+                        <div class="contact_form_input">
+                            <textarea id="message" name="message" class="contact_form_message_input item_form" cols="30"
+                                rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="contact_form_item contact_form_submit">
+                        <button type="submit" class="contact_form_submit_button button">SEND MESSAGE</button>
+                    </div>
+                </form>
             </div>
-            <div class="greeting_text">
-                <h2>Start your adventure!</h2>
+            <div class="contact_main_info">
+                <div class="contact_main_info_adress">
+                    <h2>Adress:</h2>
+                    <ul>
+                        <li>
+                            <p>1st street</p>
+                        </li>
+                        <li>
+                            <p>Zip code</p>
+                        </li>
+                        <li>
+                            <p>State</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact_main_info_contact">
+                    <h2>Contact:</h2>
+                    <ul>
+                        <li>
+                            <p>support@rainydays.com</p>
+                        </li>
+                        <li>
+                            <p>(123) 456 - 789</p>
+                        </li>
+                        <li>
+                            <p>8am - 4pm</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="greeting_cta">
-                <a href="shop.html" class="greeting_cta_button">SHOP NOW</a>
-            </div>
-        </section>
+        </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer_left">

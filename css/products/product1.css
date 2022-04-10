@@ -109,7 +109,8 @@ h3 {
 }
 
 .product_image_small {
-  width: 25vw;
+  height: 80px;
+  /* width: 25vw; */
 }
 .product_image_small img {
   max-width: 100%;

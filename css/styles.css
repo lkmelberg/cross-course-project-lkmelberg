@@ -33,6 +33,7 @@ header {
 main {
   grid-area: main;
   background-color: #0a3641;
+  /* height: 1080px; */
 }
 footer {
   grid-area: footer;
@@ -198,13 +199,13 @@ label i {
 }
 
 /* click buttons */
-.greeting_cta {
+/* .greeting_cta {
   transition-duration: 0.4s;
 }
 
 .greeting_cta:hover {
   background-color: #40240a;
-}
+} */
 
 /* global footer */
 .footer {
