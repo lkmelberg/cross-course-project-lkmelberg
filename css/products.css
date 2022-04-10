@@ -1,0 +1,65 @@
+/* Products page */
+.products_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product_name,
+.product_price,
+.products_list_heading {
+  color: #fff4ec;
+}
+
+.products_list_heading {
+  font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 0%;
+}
+.products_list_heading h1 {
+  text-align: center;
+  font-size: 20px;
+}
+.product1 {
+  grid-area: product1;
+}
+.product2 {
+  grid-area: product2;
+}
+.product3 {
+  grid-area: product3;
+}
+.product4 {
+  grid-area: product4;
+}
+.product5 {
+  grid-area: product5;
+}
+.product6 {
+  grid-area: product6;
+}
+.products_list_container {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.product_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product ul {
+  padding: 5px;
+}
+.product_image {
+  height: 200px;
+  /* width: 25vw; */
+}
+.product_image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.product_name h2 {
+  font-size: 18px;
+}
