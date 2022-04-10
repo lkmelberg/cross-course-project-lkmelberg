@@ -6,10 +6,12 @@
   /* contact us page */
 
   /* products page - shop */
-  .product_image {
-    height: 300px;
-  }
+
   /* product 1 page - winter deluxe */
+  .product_image_small {
+    height: 100px;
+    /* width: 25vw; */
+  }
 
   /* cart page */
 
@@ -142,7 +144,14 @@
   /* products page - shop */
 
   /* product 1 page - winter deluxe */
-
+  .main_form_selectors label {
+    display: contents;
+    font-size: 30px;
+  }
+  .product_image_small {
+    height: 150px;
+    /* width: 25vw; */
+  }
   /* cart page */
 
   /* checkout page */
@@ -208,6 +217,73 @@
     font-size: 30px;
   }
   /* product 1 page - winter deluxe */
+  .product_image {
+    max-width: 300px;
+    padding-right: 20px;
+  }
+  .product1_img_container {
+    /* max-width: 300px; */
+    justify-content: space-around;
+  }
+  .product_image_small {
+    max-width: 100px;
+    /* width: 25vw; */
+  }
+  .product1_details {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .main_section1 {
+    max-width: 500px;
+  }
+  .main_section2 {
+    max-width: 500px;
+    padding-top: 70px;
+  }
+  .main_form_selectors {
+    font-size: 10px;
+    max-width: 400px;
+  }
+
+  .product1_details h2,
+  .product1_details h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 0.5;
+    margin-bottom: 0%;
+  }
+  .main_form p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+  }
+  .main_description p {
+    font-size: 15px;
+  }
+  .product_price {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .product_name {
+    font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 0%;
+  }
+  .main_form_selectors label {
+    font-size: 20px;
+  }
+
+  .main_description,
+  .main_form {
+    padding-left: 70px;
+  }
+
+  .button_submit {
+    justify-content: center;
+    align-self: center;
+    margin: 20px 60px;
+  }
 
   /* cart page */
 

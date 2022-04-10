@@ -20,7 +20,7 @@
     <header class="header">
         <div class="header_top">
             <div class="header_top_logo">
-                <a href="index.html"><img src="images/logo.png" alt="Rainydays logo" class="logo_image"></a>
+                <a href="index.html"><img src="../images/logo.png" alt="Rainydays logo" class="logo_image"></a>
             </div>
         </div>
         <div class="header_top_search">
@@ -100,18 +100,27 @@
                     <h3>
                         Select:
                     </h3>
-                    <form action="../cart.html">
+                    <form class="main_form_selectors" action="../cart.html">
                         <div class="main_form_color">
-                            <p>Color:</p>
-                              <input type="radio" class="hide" id="white" name="jacket_color" value="white">
-                              <label for="white"><i class="fa-regular fa-circle circle_white"></i></label>
-                              <input type="radio" class="hide" id="black" name="jacket_color" value="black">
-                              <label for="black"><i class="fa-regular fa-circle circle_black"></i></label>
-                              <input type="radio" class="hide" id="blue" name="jacket_color" value="blue">
-                              <label for="blue"><i class="fa-regular fa-circle circle_blue"></i></label>
+                            <p>Color: &emsp;</p>
+                              <input type="radio" class="radio_button" id="white" name="jacket_color" value="white">
+                              <label for="white">
+                                <!-- <i class="fa-regular fa-circle circle_white"> -->
+                                </i>White
+                            </label>
+                              <input type="radio" class="radio_button" id="black" name="jacket_color" value="black">
+                              <label for="black">
+                                <!-- <i class="fa-regular fa-circle circle_black"> -->
+                                </i>Black
+                            </label>
+                              <input type="radio" class="radio_button" id="blue" name="jacket_color" value="blue">
+                              <label for="blue">
+                                <!-- <i class="fa-regular fa-circle circle_blue"> -->
+                                </i>Blue
+                            </label>
                         </div>
                         <div class="main_form_size">
-                            <p>Size:</p>
+                            <p>Size: &emsp;</p>
                             <input type="radio" class="radio_button" id="small" name="size" value="small">
                             <label for="small" class="radio_text">Small</label>
                             <input type="radio" class="radio_button" id="medium" name="size" value="medium">
@@ -119,9 +128,12 @@
                             <input type="radio" class="radio_button" id="large" name="size" value="large">
                             <label for="large" class="radio_text">Large</label>
                         </div>
-                        <input type="submit" class="button button_submit" value="ADD TO CART">
+                        <div class="button_submit">
+                            <input type="submit" class="button" value="ADD TO CART">
+                        </div>
                     </form>
                 </div>
+
             </div>
         </section>
     </main>

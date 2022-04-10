@@ -17,7 +17,8 @@ h1 {
 h2,
 h3,
 p,
-.radio_text {
+.radio_text,
+label {
   color: #fff4ec;
 }
 p {
@@ -31,6 +32,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-size: 7vw;
   font-weight: 0.5;
+  margin-bottom: 0%;
 }
 .main_form p {
   font-family: "Roboto", sans-serif;
@@ -69,9 +71,36 @@ h3 {
 .small_img ul {
   gap: 10px;
 }
+.main_form {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* .main_form p {
+  padding-left: 30px;
+} */
+
+.main_description {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main_description p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button_submit {
+  justify-content: center;
+  align-self: center;
+  margin: 20px 30vw;
+}
+
 /* images */
 .product_image {
-  height: 400px;
+  width: 70vw;
   /* width: 25vw; */
 }
 .product_image img {
@@ -80,8 +109,7 @@ h3 {
 }
 
 .product_image_small {
-  height: 80px;
-  /* width: 25vw; */
+  width: 25vw;
 }
 .product_image_small img {
   max-width: 100%;
@@ -89,6 +117,13 @@ h3 {
 }
 
 /* form */
+
+/* .main_form_selectors {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+} */
 
 .hide {
   display: none;
