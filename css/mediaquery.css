@@ -203,7 +203,19 @@
   /* index page */
 
   /* about us page */
+  .main_story_text {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 
+  .employee_image {
+    height: 500px;
+  }
+
+  .employee_bio {
+    max-width: 300px;
+  }
   /* contact us page */
 
   /* products page - shop */
@@ -326,7 +338,21 @@
   /* index page */
 
   /* about us page */
+  .employee_image {
+    height: 600px;
+  }
 
+  .employee_bio {
+    max-width: 400px;
+  }
+  .main_story p {
+    font-size: 30px;
+  }
+  .main h1,
+  .main h2 {
+    font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
+    font-size: 45px;
+  }
   /* contact us page */
 
   /* products page - shop */

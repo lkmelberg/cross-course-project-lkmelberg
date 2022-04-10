@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+p {
+  color: #fff4ec;
+}
+
+h1,
+h2 {
+  font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* padding: 0px 20px; */
+  justify-content: center;
+}
+
+.main_story_banner {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  background-color: #fff4ec;
+  padding: 5px 0px;
+}
+
+.main_story_banner img {
+  max-width: 200px;
+}
+.main_story {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.main_story_text {
+  padding: 0px 20px;
+}
+
+.main_employees_container {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.employee_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.employee ul {
+  padding: 5px;
+}
+.employee_image {
+  height: 200px;
+  /* width: 25vw; */
+}
+.employee_image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.employee_bio {
+  max-width: 150px;
+  padding: 5px;
+}
