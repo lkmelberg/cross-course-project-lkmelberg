@@ -198,13 +198,12 @@ label i {
 }
 
 /* click buttons */
-.button a {
+.greeting_cta {
   transition-duration: 0.4s;
 }
 
-.button a:hover {
+.greeting_cta:hover {
   background-color: #40240a;
-  color: #fff4ec;
 }
 
 /* global footer */

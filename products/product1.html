@@ -87,11 +87,41 @@
                     </div>
                 </div>
             </div>
-            <div class="main_section1">
-                <h2>Start your adventure!</h2>
-            </div>
-            <div class="greeting_cta">
-                <a href="shop.html" class="greeting_cta_button">SHOP NOW</a>
+            <div class="main_section2">
+                <div class="main_description">
+                    <h2>
+                        Description:
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla Lorem.</p>
+                </div>
+                <div class="main_form">
+                    <h3>
+                        Select:
+                    </h3>
+                    <form action="../cart.html">
+                        <div class="main_form_color">
+                            <p>Color:</p>
+                              <input type="radio" class="hide" id="white" name="jacket_color" value="white">
+                              <label for="white"><i class="fa-regular fa-circle circle_white"></i></label>
+                              <input type="radio" class="hide" id="black" name="jacket_color" value="black">
+                              <label for="black"><i class="fa-regular fa-circle circle_black"></i></label>
+                              <input type="radio" class="hide" id="blue" name="jacket_color" value="blue">
+                              <label for="blue"><i class="fa-regular fa-circle circle_blue"></i></label>
+                        </div>
+                        <div class="main_form_size">
+                            <p>Size:</p>
+                            <input type="radio" class="radio_button" id="small" name="size" value="small">
+                            <label for="small" class="radio_text">Small</label>
+                            <input type="radio" class="radio_button" id="medium" name="size" value="medium">
+                            <label for="medium" class="radio_text">Medium</label>
+                            <input type="radio" class="radio_button" id="large" name="size" value="large">
+                            <label for="large" class="radio_text">Large</label>
+                        </div>
+                        <input type="submit" class="button button_submit" value="ADD TO CART">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
