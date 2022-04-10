@@ -61,10 +61,6 @@ label {
   align-items: center;
   gap: 5px;
 }
-.item_form {
-  border-radius: 20px;
-  background-color: #fff4ec;
-}
 
 .contact_main_info {
   background-color: #fff4ec;

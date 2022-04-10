@@ -1,0 +1,75 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+label {
+  color: #fff4ec;
+}
+ul {
+  margin: 0%;
+  padding: 0%;
+}
+
+.main_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 100px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+h1 {
+  font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
+}
+
+label,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+h5 {
+  margin-bottom: 0%;
+  margin-left: 10px;
+}
+
+.cart_main_shopping_head {
+  align-content: flex-start;
+}
+.cart_main_shopping_content_ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 0px 20px;
+  border-bottom: 2px solid #fff4ec;
+}
+.main_cart_total {
+  display: flex;
+  flex-direction: row;
+  gap: 205px;
+  padding: 0px 20px;
+  align-items: baseline;
+}
+.cart_form,
+.form_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cart_form {
+  padding: 20px 0px;
+}
+
+.contact_sumbit_padding {
+  margin: 3s0px 0px;
+}

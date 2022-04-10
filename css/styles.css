@@ -175,7 +175,7 @@ label i {
 /* breadcrumb */
 .breadcrumb_text,
 .breadcrumb_text a {
-  font-size: 15px;
+  font-size: 13px;
   color: #0a3641;
 }
 .breadcrumb_current {
@@ -198,6 +198,11 @@ label i {
   font-weight: 1900;
 }
 
+/* form */
+.item_form {
+  border-radius: 20px;
+  background-color: #fff4ec;
+}
 /* click buttons */
 /* .greeting_cta {
   transition-duration: 0.4s;

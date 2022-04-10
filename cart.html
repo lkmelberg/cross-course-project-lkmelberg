@@ -35,8 +35,14 @@
                 </ul>
             </div>
         </div>
-        <div class="header_middle campaign">
-            <h1>Buy 2 Jackets - Get 10% Off</h1>
+        <div class="header_middle breadcrumb">
+            <ul>
+                <li class="breadcrumb_text breadcrumb_current"><a href="cart.html"></a>1.Cart</li>
+                <li class="breadcrumb_text"> / </li>
+                <li class="breadcrumb_text"><a href="checkout.html">2.Checkout</a></li>
+                <li class="breadcrumb_text"> / </li>
+                <li class="breadcrumb_text"><a href="checkout_success.html">3.Order Confirmation</a></li>
+            </ul>
         </div>
         <div class="header_bottom">
             <div class="header_bottom_nav">
@@ -54,17 +60,78 @@
         </div>
     </header>
     <main>
-        <section class="greeting">
-            <div class="greeting_image">
-                <a href="index.html" class="greeting_image_logo"><img src="images/logo.png" alt="Rainydays logo"></a>
+        <div class="cart_main">
+            <div class="cart_main1">
+                <div class="cart_main_header">
+                    <h1>Cart</h1>
+                </div>
+                <div class="cart_main_shopping">
+                    <div class="cart_main_shopping_head">
+                        <h2>In your cart:</h2>
+                    </div>
+                    <div class="cart_main_shopping_content">
+                        <ul class="cart_main_shopping_content_ul">
+                            <li>
+                                <h3>Product:</h3>
+                                <p>Winter Deluxe (Black, S)</p>
+                            </li>
+                            <li>
+                                <h3>Qty:</h3>
+                                <p>- 1 +</p>
+                            </li>
+                            <li>
+                                <h3>Price</h3>
+                                <p>$100</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_cart_total">
+                    <h4>Total</h4>
+                    <p>$100</p>
+                </div>
             </div>
-            <div class="greeting_text">
-                <h2>Start your adventure!</h2>
+            <div class="cart_main_form">
+                <div class="main_cart_deliverydetails">
+                    <h5>Delivery Details:
+                    </h5>
+                </div>
+                <form class="cart_form" method="post" action="cart.html">
+                    <div class="form_item contact_form_item contact_form_name">
+                        <label for="name" class="contact_form_item">Name:</label>
+                        <div class="contact_form_input">
+                            <input type="text" id="name" name="name" class="contact_form_name_input item_form" required>
+                        </div>
+                    </div>
+                    <div class="form_item contact_form_item contact_form_address">
+                        <label for="address" class="contact_form_item">Address:</label>
+                        <div class="contact_form_input">
+                            <input type="text" id="address" name="address" class="contact_form_email_input item_form"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form_item contact_form_item contact_form_email">
+                        <label for="email" class="contact_form_item">Email:</label>
+                        <div class="contact_form_input">
+                            <input type="email" id="email" name="email" class="contact_form_email_input item_form"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form_item contact_form_item contact_form_tel">
+                        <label for="tel" class="contact_form_item">Phone:</label>
+                        <div class="contact_form_input">
+                            <input type="tel" id="tel" name="tel" class="contact_form_email_input item_form" required>
+                        </div>
+                    </div>
+                    <div class="contact_sumbit_padding">
+                        <div class="contact_form_item cart_form_submit">
+                            <a href="checkout.html" class="cart_form_submit_button button">CONTINUE
+                                TO CHECKOUT</a>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="greeting_cta">
-                <a href="shop.html" class="greeting_cta_button">SHOP NOW</a>
-            </div>
-        </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer_left">

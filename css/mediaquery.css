@@ -85,7 +85,7 @@
     display: block;
   }
 
-  label {
+  .header_bottom_nav label {
     display: none;
   }
   .header_top {
@@ -156,7 +156,11 @@
     /* width: 25vw; */
   }
   /* cart page */
-
+  .cart_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   /* checkout page */
 
   /* checkout success page */
