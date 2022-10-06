@@ -5,6 +5,11 @@ p {
   color: #fff4ec;
 }
 
+.employee_container h3,
+.employee_container p {
+  color: #40240a;
+}
+
 h1,
 h2 {
   font-family: "Hiragino Mincho", Georgia, "Times New Roman", Times, serif;
@@ -38,6 +43,7 @@ h2 {
 }
 .main_story_text {
   padding: 0px 20px;
+  margin: 3rem;
 }
 
 .main_employees_container {
@@ -46,25 +52,43 @@ h2 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin: 4rem;
 }
 
 .employee_container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem;
+  border-radius: 5%;
+  background-color: #fff4ec;
+  padding: 0rem 1rem;
 }
-.employee ul {
+/* .employee ul {
   padding: 5px;
-}
+} */
 .employee_image {
-  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  max-height: 25rem;
+  /* height: 200px; */
   /* width: 25vw; */
 }
+.employee_image a {
+  max-width: 20rem;
+  padding: 0%;
+  margin: 0%;
+  height: 2px;
+}
 .employee_image img {
-  max-width: 100%;
-  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 80%;
 }
 .employee_bio {
   max-width: 150px;
-  padding: 5px;
+  padding: 2rem;
 }

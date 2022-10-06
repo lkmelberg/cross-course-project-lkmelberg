@@ -5,7 +5,9 @@
   align-items: center;
 }
 .product_name,
-.product_price,
+.product_price {
+  color: #40240a;
+}
 .products_list_heading {
   color: #fff4ec;
 }
@@ -42,6 +44,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin: 4rem;
 }
 
 .product_container {
@@ -62,4 +65,12 @@
 }
 .product_name h2 {
   font-size: 18px;
+}
+
+.product {
+  /* border: 1rem solid #40240a; */
+  background-color: #fff4ec;
+  padding: 0rem 1rem;
+  margin: 1rem;
+  border-radius: 5%;
 }

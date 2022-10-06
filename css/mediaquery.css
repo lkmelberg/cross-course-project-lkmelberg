@@ -258,7 +258,7 @@
     justify-content: space-around;
   }
   .product_image_small {
-    max-width: 100px;
+    min-width: 25vw;
     /* width: 25vw; */
   }
   .product1_details {
@@ -269,6 +269,7 @@
     justify-content: space-around;
   }
   .main_section1 {
+    padding-left: 40px;
     max-width: 500px;
   }
   .main_section2 {
