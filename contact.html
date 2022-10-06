@@ -15,16 +15,16 @@
     <link href="css/mediaquery.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/cf5488008f.js" crossorigin="anonymous"></script>
     <!-- Hotjar Tracking Code for https://timely-flan-8e1a4e.netlify.app -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3187953,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3187953, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 </head>
 
 <body>
@@ -69,63 +69,67 @@
             <section class="contact_main_header">
                 <h1>Contact Us</h1>
             </section>
-            <div class="contact_main_form">
-                <form class="contact_form" method="post" action="contact.php">
-                    <div class="form_item contact_form_item contact_form_name">
-                        <label for="name" class="contact_form_item">Name:</label>
-                        <div class="contact_form_input">
-                            <input type="text" id="name" name="name" class="contact_form_name_input item_form" required>
-                        </div>
-                    </div>
-                    <div class="form_item contact_form_item contact_form_email">
-                        <label for="email" class="contact_form_item">Email:</label>
-                        <div class="contact_form_input">
-                            <input type="email" id="email" name="email" class="contact_form_email_input item_form"
-                                required>
-                        </div>
-                    </div>
-                    <div class="form_item contact_form_item contact_form_message">
-                        <label for="message" class="contact_form_item">Message:</label>
-                        <div class="contact_form_input">
-                            <textarea id="message" name="message" class="contact_form_message_input item_form" cols="30"
-                                rows="10" required></textarea>
-                        </div>
-                    </div>
-                    <div class="contact_form_item contact_form_submit">
-                        <button type="submit" class="contact_form_submit_button button">SEND MESSAGE</button>
-                    </div>
-                </form>
-            </div>
-            <div class="contact_main_info">
-                <div class="contact_main_info_adress">
-                    <h2>Adress:</h2>
-                    <ul>
-                        <li>
-                            <p>1st street</p>
-                        </li>
-                        <li>
-                            <p>Zip code</p>
-                        </li>
-                        <li>
-                            <p>State</p>
-                        </li>
-                    </ul>
+            <div class="contact_main_form contact-message"></div>
+            <form>
+                <div>
+                    <div class="form-error" id="the-name-error">Please enter your name</div>
+                    <label>
+                        Name (required)
+                        <input name="the-name" id="the-name" class="item_form" />
+                    </label>
                 </div>
-                <div class="contact_main_info_contact">
-                    <h2>Contact:</h2>
-                    <ul>
-                        <li>
-                            <p>support@rainydays.com</p>
-                        </li>
-                        <li>
-                            <p>(123) 456 - 789</p>
-                        </li>
-                        <li>
-                            <p>8am - 4pm</p>
-                        </li>
-                    </ul>
+                <div>
+                    <div class="form-error" id="emailError">Please enter a valid email address</div>
+                    <label>
+                        Email (required)
+                        <input name="email" id="email" class="item_form" />
+                    </label>
                 </div>
+                <div>
+                    <div class="form-error" id="messageError">Message must be at least 10 characters
+                    </div>
+                    <label>
+                        Message (min 10 characters)
+                    </label>
+                    <textarea id="message" name="message" class="contact_form_message_input item_form"
+                        rows="10"></textarea>
+
+                </div>
+
+
+                <button class="button">Send</button>
+            </form>
+        </div>
+        <div class="contact_main_info">
+            <div class="contact_main_info_adress">
+                <h2>Adress:</h2>
+                <ul>
+                    <li>
+                        <p>1st street</p>
+                    </li>
+                    <li>
+                        <p>Zip code</p>
+                    </li>
+                    <li>
+                        <p>State</p>
+                    </li>
+                </ul>
             </div>
+            <div class="contact_main_info_contact">
+                <h2>Contact:</h2>
+                <ul>
+                    <li>
+                        <p>support@rainydays.com</p>
+                    </li>
+                    <li>
+                        <p>(123) 456 - 789</p>
+                    </li>
+                    <li>
+                        <p>8am - 4pm</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
         </div>
         </div>
     </main>
@@ -152,6 +156,9 @@
             <p class="copyright">© 2022 Rainydays Inc. Clothing Brand, Seaside, CA, USA. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/const.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>

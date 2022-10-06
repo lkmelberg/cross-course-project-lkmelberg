@@ -20,20 +20,52 @@ label {
   font-family: "Roboto", sans-serif;
 }
 .main_ch_container {
-  display: flex;
-  flex-direction: column;
   gap: 30px;
 }
-.cart_form {
+/* .cart_form {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
-}
+} */
 .main_ch_place,
 .main_ch_back {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
+}
+
+/* new */
+.ch_payment_form,
+.ch_contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.payment_form_bottom {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.payment_sec input,
+.payment_exp input {
+  width: 50%;
+}
+.ch_divider {
+  margin: 30px 0px;
+  border-bottom: 1px solid #fff4ec;
+}
+.ch_divider_space {
+  margin: 30px 0px;
+  border-bottom: 1px solid #0a3641;
+}
+.item_form_ch {
+  width: 20rem;
+  display: block;
+}
+.main_ch_buttons {
+  margin: 3rem 0rem;
 }

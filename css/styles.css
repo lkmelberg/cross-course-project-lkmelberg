@@ -25,6 +25,9 @@ footer,
 div {
   margin: 0;
 }
+body {
+  min-height: 90%;
+}
 header {
   grid-area: header;
   background-color: #0a3641;
@@ -188,20 +191,39 @@ label i {
   border: 2px solid #40240a;
   color: #40240a;
   /* font-size: ; - maybe add later */
-  padding: 10px 40px;
+  padding: 1.5rem 40px;
   text-align: center;
   display: inline-flex;
   border-radius: 40px;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 1rem 0rem;
   font-weight: 1900;
+}
+
+.button:hover {
+  background-color: #40240a;
+  border: 2px solid #fff4ec;
+  color: #fff4ec;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #0a3641;
+}
+.directory a:hover {
+  border-bottom: 2px solid #0a3641;
 }
 
 /* form */
 .item_form {
-  border-radius: 20px;
+  width: 90%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
   background-color: #fff4ec;
+}
+form div {
+  padding-top: 0.5rem;
 }
 /* click buttons */
 /* .greeting_cta {
@@ -262,4 +284,95 @@ label i {
   text-align: center;
   margin-top: 0%;
   padding: 20px 5px 10px 5px;
+}
+
+/* forms */
+/* p,
+label {
+  font-size: 12px;
+} */
+.contact_main_info li {
+  display: block;
+}
+.contact_main_info ul {
+  padding: 0%;
+}
+.contact_main_info_adress {
+  margin-right: 20px;
+}
+.contact_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .contact_main_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.contact_form,
+.form_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact_main_info {
+  background-color: #fff4ec;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0px;
+  gap: 10px;
+  padding: 20px 10px;
+  max-width: 100%;
+}
+
+.contact_main_info_adress,
+.contact_main_info_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+form {
+  padding: 2em;
+  border-radius: 1rem;
+  max-width: 90%;
+}
+input {
+  width: 90%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff4ec;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.contact-message-success {
+  background: green;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
 }

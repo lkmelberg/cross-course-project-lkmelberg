@@ -15,16 +15,16 @@
     <link href="css/mediaquery.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/cf5488008f.js" crossorigin="anonymous"></script>
     <!-- Hotjar Tracking Code for https://timely-flan-8e1a4e.netlify.app -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3187953,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3187953, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 </head>
 
 <body>
@@ -76,58 +76,84 @@
                 <h1>Checkout</h1>
             </div>
             <div class="main_ch_details">
-                <div class="main_ch_deliverydetails">
-                    <h2>Delivery Details:
-                    </h2>
+                <div class="ch_form_container">
+                    <div class="ch_divider"></div>
+                    <div class="ch_form ch_contact">
+                        <h2>Contact details:</h2>
+                        <div class="ch_contact_form">
+
+                            <form>
+                                <div>
+                                    <div class="form-error" id="the-name-error">Please enter your name</div>
+                                    <label>
+                                        Name (required)
+                                        <input name="the-name" id="the-name" class="item_form item_form_ch" />
+                                    </label>
+                                </div>
+                                <div>
+                                    <div class="form-error" id="emailError">Please enter a valid email address</div>
+                                    <label>
+                                        Email (required)
+                                        <input name="email" id="email" class="item_form item_form_ch" />
+                                    </label>
+                                </div>
+                                <div>
+                                    <div class="form-error" id="phoneError">Please enter a valid phone number</div>
+                                    <label>
+                                        Phone (required)
+                                        <input name="phone" id="phone" class="item_form item_form_ch" />
+                                    </label>
+                                </div>
+                                <div class="ch_divider_space"></div>
+                                <div class="ch_form ch_paymemt">
+                                    <h2>Payment details:</h2>
+                                    <div>
+                                        <div class="form-error" id="card-name-error">Please enter your name</div>
+                                        <label>
+                                            Name on card
+                                            <input name="card-name" id="card-name" class="item_form item_form_ch" />
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <div class="form-error" id="cardnum-error">Please enter a valid card
+                                            number
+                                        </div>
+                                        <label>
+                                            Card number (Mastercard only)
+                                            <input name="cardnum" id="cardnum" class="item_form item_form_ch" />
+                                        </label>
+                                    </div>
+                                    <div class="payment_exp">
+                                        <div class="form-error" id="exp-error">Please enter expiration date
+                                        </div>
+                                        <label>
+                                            Expiration date
+                                            <input name="exp" id="exp" class="item_form item_form_ch" />
+                                        </label>
+                                    </div>
+                                    <div class="payment_sec">
+                                        <div class="form-error" id="sec-error">Please enter security code
+                                        </div>
+                                        <label>
+                                            Security code
+                                            <input name="sec" id="sec" class="item_form item_form_ch " />
+                                        </label>
+                                    </div>
+
+                                    <button class="button cart_form_submit_button">PLACE ORDER</button>
+                            </form>
+                            <div class="checkout-message"></div>
+                        </div>
+                    </div>
                 </div>
-                <form class="cart_form" method="post" action="card.html">
-                    <div class="form_item contact_form_item contact_form_name">
-                        <label for="name" class="contact_form_item">Name on card:</label>
-                        <div class="contact_form_input">
-                            <input type="text" id="name" name="name" class="contact_form_name_input item_form">
-                        </div>
-                    </div>
-                    <div class="form_item contact_form_item contact_form_number">
-                        <label for="ccn">Credit Card Number:</label>
-                        <div class="contact_form_input">
-                            <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
-                                autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"
-                                class="item_form">
-                        </div>
-                    </div>
-                    <div class="form_item contact_form_item contact_form_email">
-                        <label for="exdate" class="contact_form_item">Expiration Date:</label>
-                        <div class="contact_form_input">
-                            <input type="text" id="exdate" name="exdate" class="contact_form_email_input item_form"
-                                required>
-                        </div>
-                    </div>
-                    <div class="form_item contact_form_item contact_form_tel">
-                        <label for="sec" class="contact_form_item">Security Code:</label>
-                        <div class="contact_form_input">
-                            <input type="text" id="sec" name="sec" class="contact_form_email_input item_form">
-                        </div>
-                    </div>
-                    <div class="form_item contact_form_item contact_form_tel">
-                        <label for="delivery" class="contact_form_item">Delivery Method:</label>
-                        <div class="contact_form_input">
-                            <select name="delivery" id="delivery" class="item_form">
-                                <option value="mailbox">In Your Mailbox</option>
-                                <option value="pickupp">Pick Up Point</option>
-                                <option value="express">Express Delivery</option>
-                            </select>
-                        </div>
-                    </div>
-                </form>
             </div>
             <div class="main_ch_buttons">
-                <div class="main_ch_place">
-                    <a href="checkout_success.html" class="cart_form_submit_button button">PLACE ORDER</a>
-                </div>
-                <div class="main_ch_back">
-                    <a href="cart.html" class="cart_form_submit_button button">BACK</a>
-                </div>
+
             </div>
+            <div class="main_ch_back">
+                <a href="cart.html" class="cart_form_submit_button button">BACK TO CART</a>
+            </div>
+        </div>
         </div>
     </main>
     <footer class="footer">
@@ -153,6 +179,9 @@
             <p class="copyright">© 2022 Rainydays Inc. Clothing Brand, Seaside, CA, USA. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/const.js"></script>
+    <script src="js/checkout.js"></script>
 </body>
 
 </html>

@@ -61,18 +61,11 @@ h5 {
   padding: 0px 20px;
   align-items: baseline;
 }
-.cart_form,
-.form_item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
+
 .cart_form {
   padding: 20px 0px;
 }
 
-.contact_sumbit_padding {
-  margin: 3s0px 0px;
+.cart_form_submit_button {
+  margin: 30px 0px 0px 30px;
 }
