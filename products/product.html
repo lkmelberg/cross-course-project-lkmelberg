@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Rainydays website. Winter Deluxe jacket products page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainydays | Winter Deluxe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/products/product1.css" rel="stylesheet" />
+    <link href="../css/mediaquery.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/cf5488008f.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://timely-flan-8e1a4e.netlify.app -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3187953, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_top">
+            <div class="header_top_logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="Rainydays logo" class="logo_image"></a>
+            </div>
+        </div>
+        <div class="header_top_search">
+            <input type="text" placeholder="Search.." class="search">
+        </div>
+        <div class="header_top_icons">
+            <div class="menu_icons">
+                <ul>
+                    <li><a href="../favorites.html"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="../cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="../profile.html"><i class="fa-solid fa-circle-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_middle breadcrumb">
+            <ul>
+                <li class="breadcrumb_text"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb_text"> / </li>
+                <li class="breadcrumb_text"><a href="../products.html">Products</a></li>
+                <li class="breadcrumb_text"> / </li>
+                <li class="breadcrumb_text breadcrumb_current"><a href="../product1.html">Winter Deluxe</a></li>
+            </ul>
+        </div>
+        <div class="header_bottom">
+            <div class="header_bottom_nav">
+                <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="hamburger-menu" />
+                <nav class="menu">
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../products.html">SHOP</a></li>
+                        <li><a href="../about.html">ABOUT US</a></li>
+                        <li><a href="../contact.html">CONTACT</a></li>
+                    </ul>
+            </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="product1_details">
+            <div class="main_section1">
+                <!-- <div class=main_heading>
+                    <ul>
+                        <li class="product_name">
+                            <h1>Winter Deluxe</h1>
+                        </li>
+                        <li class="product_price">$100</li>
+                    </ul>
+                </div>
+                <div class="product1_img_container">
+                    <div class="main_img">
+                        <ul>
+                            <li class="product_image"><a href="product1.html"><img
+                                        src="../images/product/product1_1.jpg" alt="Winter Deluxe Jacket"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="small_img">
+                        <ul>
+                            <li class="product_image_small current_img"><a href="product1.html"><img
+                                        src="../images/product/product1_1.jpg" alt="Winter Deluxe Jacket img 1"></a>
+                            </li>
+                            <li class="product_image_small"><a href="product1.html"><img
+                                        src="../images/product/product1_2.jpg" alt="Winter Deluxe Jacket img 2"></a>
+                            </li>
+                            <li class="product_image_small"><a href="product1.html"><img
+                                        src="../images/product/product1_3.jpg" alt="Winter Deluxe Jacket img 3"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+            <div class="main_section2">
+                <div class="main_description">
+                    <h2>
+                        Description:
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla Lorem.</p>
+                </div>
+                <div class="main_form">
+                    <h3>
+                        Select:
+                    </h3>
+                    <form class="main_form_selectors">
+                        <div class="main_form_color">
+                            <p>Color: &emsp;</p>
+                              <input type="radio" class="radio_button" id="white" name="jacket_color" value="white">
+                              <label for="white">
+                                <!-- <i class="fa-regular fa-circle circle_white"> -->
+                                </i>White
+                            </label>
+                              <input type="radio" class="radio_button" id="black" name="jacket_color" value="black">
+                              <label for="black">
+                                <!-- <i class="fa-regular fa-circle circle_black"> -->
+                                </i>Black
+                            </label>
+                              <input type="radio" class="radio_button" id="blue" name="jacket_color" value="blue">
+                              <label for="blue">
+                                <!-- <i class="fa-regular fa-circle circle_blue"> -->
+                                </i>Blue
+                            </label>
+                        </div>
+                        <div class="main_form_size">
+                            <p>Size: &emsp;</p>
+                            <input type="radio" class="radio_button" id="small" name="size" value="small">
+                            <label for="small" class="radio_text">Small</label>
+                            <input type="radio" class="radio_button" id="medium" name="size" value="medium">
+                            <label for="medium" class="radio_text">Medium</label>
+                            <input type="radio" class="radio_button" id="large" name="size" value="large">
+                            <label for="large" class="radio_text">Large</label>
+                        </div>
+
+                        <div class="button_submit">
+                            <a href="products.html" class="button button_addtToCart">ADD TO CART</a>
+                            <div class="confirm">
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_left">
+            <section class="directory">
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="legal/privacy.html">Privacy Policy</a></li>
+                    <li><a href="legal/terms.html">Terms & Conditions</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer_right">
+            <section class="socials">
+                <ul>
+                    <li><a href="https://wwww.instagram.com/rainydays"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://wwww.facebook.com/rainydays"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://wwww.twitter.com/rainydays"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer_middle">
+            <p class="copyright">© 2022 Rainydays Inc. Clothing Brand, Seaside, CA, USA. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/product.js"></script>
+</body>
+
+</html>
