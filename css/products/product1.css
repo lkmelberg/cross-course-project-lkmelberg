@@ -71,6 +71,10 @@ h3 {
 .small_img ul {
   gap: 10px;
 }
+
+.main_img {
+  margin-top: 2rem;
+}
 .main_form {
   padding-left: 15px;
   display: flex;
