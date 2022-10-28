@@ -383,3 +383,14 @@ label {
   font-size: 0.9rem;
   margin-top: 2px;
 }
+
+/* products */
+
+.product_image {
+  /* height: 200px; */
+  /* width: 25vw; */
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+}

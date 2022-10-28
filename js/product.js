@@ -11,7 +11,7 @@ if (id === null) {
 
 console.log(id);
 
-const url = "https://flowpow.pro/new/wp-json/wc/store/products" + id;
+const url = "https://flowpow.pro/new/wp-json/wc/store/products/" + id;
 
 console.log(url);
 
@@ -23,17 +23,14 @@ async function characterDisplay() {
 
     title.innerHTML = `${data.name}`;
 
-    detailsContainer.innerHTML += `<div class="char_det">
-                                      <h4 class="details_name">Name: ${data.name}</h3>
-                                      <div class="details-image" 
-                                    style="background-image: url('${data.image}')"></div>
-                                     <p class="details status">Status: ${data.status}</p>
-                                      <p class="details species">Species: ${data.species}</p>
-                                      <p class="details origin">Origin: ${data.origin.name}</p>
+    detailsContainer.innerHTML += `<div class="main_img">
+                                      <h1 class="product_name">${data.name}</h1>
+                                      <div class="product_image"><img
+                                        src="${data.images[0].src}" alt="Jacket name"></div>
+                                      <p class="product_price">Price: $${data.prices.regular_price}</p>
+            
                                    </div>`;
     console.log("Success");
-    const loader = document.querySelector(".loader");
-    loader.classList.remove("loader");
   } catch (error) {
     console.log(error, "An error occurred");
     detailsContainer.innerHTML = "An error occurred when calling the API";
