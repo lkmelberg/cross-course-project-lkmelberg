@@ -251,7 +251,7 @@
   /* product 1 page - winter deluxe */
   .product_image {
     max-width: 300px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
   }
   .product1_img_container {
     /* max-width: 300px; */
