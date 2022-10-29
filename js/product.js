@@ -1,5 +1,6 @@
 const detailsContainer = document.querySelector(".main_section1");
 const title = document.querySelector("title");
+const brName = document.querySelector(".breadcrumb_current");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -22,6 +23,7 @@ async function characterDisplay() {
     console.log(data);
 
     title.innerHTML = `${data.name}`;
+    brName.innerHTML = `${data.name}`;
 
     detailsContainer.innerHTML += `<div class="main_img">
                                       <h1 class="product_name">${data.name}</h1>
