@@ -55,6 +55,8 @@ async function fetchProducts() {
                     </div>`;
     });
     console.log("Success");
+    const loader = document.querySelector(".loader");
+    loader.classList.remove("loader");
   } catch (error) {
     console.log(error);
     charactersContainer.innerHTML = message("error");
