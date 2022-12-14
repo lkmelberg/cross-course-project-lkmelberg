@@ -10,7 +10,7 @@ cartAdd.addEventListener("click", dontGo);
 cartAdd.addEventListener("click", added);
 
 function added() {
-  conf.innerHTML = `<h3>Item added</h3> <div class="button button_reset"><a href="product1.html">Add another</a><div>`;
+  conf.innerHTML = `<h3>Item added</h3> <div class="button button_reset"><a href="product.html">Add another</a><div>`;
 }
 
 // function resett() {
