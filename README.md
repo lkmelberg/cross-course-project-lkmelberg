@@ -5,8 +5,8 @@ The project was created to learn as we went along with our 1st year of front-end
 We were tasked with creating a webshop for a company called rainydys who sell rain jackets for men and women. Project brief: https://github.com/NoroffFEU/first-year-cross-course-assignment-brief-one
 
 Goals:
-Create design with accessability and purpose
-Create website with HTML and CSS
+Create design with accessability and purpose following design principles
+Development with HTML and CSS
 Later added javascript
 Created validation for the contact form
 Created and linked site to a headless API for products
@@ -17,7 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Clone the repo:
 
-git clone git@github.com:lkmelberg/cross-course-project-lkmelberg
+git clone git@github.com:lkmelberg/cross-course-project-lkmelberg.git
 
     Install the dependencies:
 
