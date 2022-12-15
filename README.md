@@ -11,6 +11,10 @@ Later added javascript
 Created validation for the contact form
 Created and linked site to a headless API for products
 
+## Live website
+
+https://timely-flan-8e1a4e.netlify.app/
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
