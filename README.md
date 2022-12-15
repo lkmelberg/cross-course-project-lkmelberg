@@ -42,6 +42,7 @@ npm run start
 
 ## Built With
 
+- Headless wp API
 - HTML
 - CSS
 - Vanilla JavaScript
